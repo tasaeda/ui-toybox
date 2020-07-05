@@ -11,6 +11,12 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
+    path: '/learning-vue',
+    name: 'LearningVue',
+    component: () =>
+      import(/* webpackChunkName: "learning-vue" */ '../views/LearningVue.vue'),
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
